@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulário de Cadastro</h2>
+        <form id="dataForm">
+            <input type="text" name="Código" placeholder="código" required>
+            <input type="text" name="Marca" placeholder="marca" required>
+            <input type="text" name="Tipo" placeholder="tipo" required>
+            <input type="text" name="Categoria" placeholder="categoria" required>
+            <input type="text" name="Preço" placeholder="preço" required>
+            <input type="text" name="Custo" placeholder="custo" required>
+            <input type="text" name="Observação" placeholder="observação" required>
+            <div class="button-group">
+                <button type="submit" class="submit-button">Enviar</button>
+                <button type="button" class="clear-button" id="clearButton">Limpar</button>
+            </div>
+        </form>
+    </div>
+    <div class="data-container" id="dataContainer">
+        <!-- Dados enviados aparecerão aqui -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
