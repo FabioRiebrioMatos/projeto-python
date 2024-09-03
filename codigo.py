@@ -19,7 +19,7 @@ pyautogui.press('win')
 
 # digita o nome do programa, para demonstração usar navegador
 
-pyautogui.write('brave')
+pyautogui.write('edge')
 
 # aperta enter
 
@@ -31,7 +31,7 @@ time.sleep(1)
 
 # digitar o link
 
-link = '#'
+link = 'http://127.0.0.1:5500/projeto-python/login.html'
 pyautogui.write(link)
 
 # apertar enter
@@ -44,7 +44,7 @@ time.sleep(1)
 
 # Fazer login
 
-pyautogui.click(x=633, y=352)
+pyautogui.click(x=1093, y=561)
 pyautogui.write('emailcadastrado@gmail.com')
 pyautogui.press('enter')
 pyautogui.write('123')   
@@ -57,7 +57,7 @@ tabela = pandas.read_csv('produtos.csv')
 # Cadastrar um produto
 
 for linha in tabela.index:
-    pyautogui.click(x=583, y=239)
+    pyautogui.click(x=1133, y=413)
 
     pyautogui.write(str(tabela.loc[linha, "codigo"]))
     pyautogui.press('tab')
