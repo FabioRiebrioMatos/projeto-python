@@ -31,7 +31,7 @@ time.sleep(1)
 
 # digitar o link
 
-link = 'https://site-omega-bay.vercel.app/'
+link = 'https://projeto-python-three.vercel.app/'
 pyautogui.write(link)
 
 # apertar enter
@@ -40,7 +40,7 @@ pyautogui.press('enter')
 
 # esperar 5 segundos
 
-time.sleep(1)
+time.sleep(5)
 
 # Fazer login
 
@@ -81,7 +81,7 @@ for linha in tabela.index:
          pyautogui.write(str(tabela.loc[linha, 'obs']))
     pyautogui.press('tab')
     pyautogui.press('enter')
-
-    pyautogui.scroll(5000)
+    
+    pyautogui.scroll(50000)
 
 # Repetir isso até acabar a base de dados
